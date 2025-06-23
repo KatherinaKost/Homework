@@ -6,8 +6,8 @@
 '''
 
 a = {'a': 10, 'b': 20, 'c' : 30, 'd' : 40}
-b = input ('Введите фразу')
-b = list(b)
+b = list(input ('Введите фразу'))
+
 sum = 0
 for i in range (len(b)):
     if b[i] in a:
