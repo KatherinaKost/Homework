@@ -22,7 +22,7 @@ def yes_or_no(*n):
         else:
             b.append('no')
             c.add(i)
-    return b
+    return b    
     
 
 print(yes_or_no(1, 2, 2.5, 2, 3))

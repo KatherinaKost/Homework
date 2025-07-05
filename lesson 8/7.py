@@ -8,8 +8,6 @@
 """
 
 
-
-
 def text_inform(text)->dict:
     keys_text = ['Кол-во символов', 'Кол-во слов', 'Кол-во строк', 'Кол-во предложений']
     normal_text = [part.strip() for part in text.replace('!', '.').replace('?', '.').split('.') if part.strip()]

@@ -18,5 +18,5 @@ def count_char(word:str):
             b[letter] += 1
     return b
 
-print(count_char('Костюченко'))
+print(count_char('трпаррп'))
 

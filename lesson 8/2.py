@@ -4,14 +4,14 @@
 
 '''
 
-a, b = 2, 3
 
-#тоже потом через трай экспет проверить чтобы целые были и только периметр или площадь введена
-
-def a1(a:int, b:int, operation='per' or 'sqr'):   #по умолчанию вычислять будет периметр, если не укажу другое
-    if operation == 'per':
-        return (a + b) * 2
-    elif operation == 'sqr':
-        return a * b
+def a1(a:int, b:int, operation='per' or 'sqr'):
+    if isinstance(a, int) and isinstance(b, int):  
+        if operation == 'per':
+            return (a + b) * 2
+        elif operation == 'sqr':
+            return a * b
+    else:
+        raise TypeError('Значения должны быть числами')
     
-print(a1(2, 3, operation='per'))
+print(a1(2, 10, operation='per'))

@@ -9,3 +9,10 @@
 
 с помощью try перехватить возможные ошибки.
 '''
+def format_n(n):
+    try:
+       return f'{n} -> {n:_.2f} руб.'.replace('_', ' ')
+    except ValueError:
+        print('Неверные данные')
+
+print (format_n(123456789))
