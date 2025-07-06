@@ -7,4 +7,20 @@
     -распечатать отдельно отзывы
 
 """
+dict_review ={}
+while True:
+    name = input('имя: ')
+    if name  == 'stop':
+        break
+    review = input('отзыв: ')    
+    dict_review[name] = review
+ 
+    
+    
+print(f' кол-во отзывов - {len(dict_review)}')
+for name in dict_review.keys():
+    print(f"- {name}")
+print("\nОтзывы:")
+for review in dict_review.values():
+    print(f"- {review}")
 

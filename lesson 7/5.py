@@ -14,3 +14,8 @@
 
 
 '''
+list1 = ['qwertyu','asdfggh','zxcvbnm','yuiop[]','hjklasd','mnbvnbv']
+a = 1
+for i in list1:
+    print(f'{a} - {i} - {i[a-1]}')
+    a+=1

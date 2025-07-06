@@ -14,4 +14,47 @@
     Неправильный формат. Пример: '2 + 4'
 
 """
+while True:
+    
+    a = input("Введите пример или 'стоп' для завершения: ").lower().strip()
+    if a == 'стоп':
+        print("работа окончена")
+        break
+    
+    try:
+        if '+' in a:
+            list1 = a.split('+')
+            list1 = [float(i) for i in list1]
+            print('ответ:', sum(list1))
+
+        elif '-' in a:
+                list1 = a.split('-')
+                list1 = [float(i) for i in list1]
+                print ('ответ:', list1[0]-list1[1])
+        elif '*' in a:
+            list1 = a.split('*')
+            list1 = [float(i) for i in list1]
+            print ('ответ:', list1[0]*list1[1])
+
+        elif '**' in a:
+            list1 = a.split('**')
+            list1 = [float(i) for i in list1]
+            print('ответ:', list1[0]**list1[1])
+
+     
+        elif '/' in a:
+            list1 = a.split('/')
+            list1 = [float(i) for i in list1]
+            print (list1[0]/list1[1])
+    except ZeroDivisionError:
+        print("Ошибка: деление на ноль запрещено")
+    except ValueError:
+        print("Ошибка: неправильный формат числа. Пример: '2+3'")
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")   
+
+    
+
+
+
 
