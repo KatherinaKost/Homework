@@ -16,7 +16,7 @@ print(c10()) -> 12
 print(c10()) -> 13 
 
 """
-def counter(n):
+def counter(n): 
     def wrapper():
         nonlocal n       
         n += 1

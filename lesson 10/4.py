@@ -15,7 +15,7 @@ def fibonachi():
         a, b = b, b + a
         
 
-fb_n = fibonachi()
+fb_n = fibonachi() 
 print(next(fb_n))       
 print(next(fb_n))       
 print(next(fb_n))       

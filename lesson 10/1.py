@@ -5,7 +5,7 @@
     - на каждой забиндить клик через одну и туже функцию cath
 
 '''
-
+  
 import turtle
 from turtle import *
 from random import randint

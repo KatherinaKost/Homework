@@ -15,7 +15,7 @@ console = Console()
 
 #елка вне сильный ветер
 
-def c_tree(n):
+def c_tree(n):  
     tree = []
     a = 1
     for i in range(n):

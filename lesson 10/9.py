@@ -17,7 +17,7 @@ def f1(func):
         return res
     return wrapper
 
-
+ 
 @f1
 def f(name, surname):
     print(f'Привет, {name} {surname}')

@@ -16,7 +16,7 @@ next(tn_gen) -> 15
 next(tn_gen) -> 21
 """
 
-def triangular_numbers():
+def triangular_numbers():  
     n = 1
     while 1:
         Tn = 1 / 2 * n * (n + 1)
