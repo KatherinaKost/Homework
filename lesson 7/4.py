@@ -19,7 +19,7 @@ for i in range(n):
    branch = '*' * a
    no_branch = ' '*((n - 1)- i)
    start_position = random.randint(0, len(no_branch))
-   real_branch = no_branch[:start_position] + '.' + no_branch[start_position:] + branch + no_branch[:start_position] + '.'
+   real_branch = no_branch[:start_position] + '.' +'*' + no_branch[start_position:] + branch + no_branch[:start_position] + '.'+'*'
    print(real_branch)
    a += 2
 
